@@ -1,0 +1,309 @@
+body {
+	max-width: 90%;
+	margin: auto;
+	padding: 1em;
+	box-sizing: border-box;
+	font-family: Lato, sans-serif;
+	background-color: #BAD1FE;
+	letter-spacing: 1px;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	position: fixed;
+	top: 0;
+	min-height: 75px;
+	align-items: center;
+	background-color: #BAD1FE;
+	max-width: 85vw;
+	width: 100%;
+	margin:0;
+  padding: 0;
+
+}
+
+img {
+	float: left;
+	max-width: 300px;
+	height: 100%;
+	width: 100%;
+}
+
+.nav-ul {
+	display: flex;
+	flex-direction: row;
+	list-style-type: none;
+	width: 30vw;
+	justify-content: space-between;
+	box-sizing: border-box;
+
+}
+
+/* email */
+
+#form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+
+}
+
+#email {
+	max-width: 275px;
+	width: 100%;
+	padding: .5em;
+}
+
+#submit {
+	background-color: rgb(241, 175, 15);
+	font-weight: 900;
+	max-width: 150px;
+	width: 100%;
+	font-size: 1em;
+	height: 2em;
+	border: transparent; 
+	padding: auto 20px;
+	margin: 10px auto;
+
+}
+
+#submit:hover {
+	background-color: orange;
+}
+
+h2 {
+	padding-top: 5vw;
+/* 	padding-bottom: 1vw; */
+	text-align: center;
+}
+
+h3 {
+	font-size: 1.5em;
+	font-weight: 700;
+	margin-bottom: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+a:hover {
+	color: rgb(241, 175, 15);
+	text-transform: uppercase;
+}
+
+/* descriptions */
+
+.container {
+	display: block;
+	margin: auto;
+	padding-top: 4vw;
+
+}
+
+.grid {
+	max-width: 70vw;
+	display: flex;
+	margin: auto;
+
+}
+
+.icon { 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+	width: 20vw;
+	height: 125px;
+
+ }
+
+ i {
+ 	font-size: 3em;
+ 	color: rgb(241, 175, 15);
+ }
+
+.desc {
+	height: 125px;
+	width: 80vw;
+	padding-left: 2vw;
+	padding-right: 2vw;
+/*   align-self: center; */
+}
+
+/* video example */
+
+iframe {
+	width: 100%
+	max-width: 560px;
+}
+
+.video {
+	margin-top: 30px;
+	display: flex;
+	justify-content: center;
+}
+
+/* prices */
+
+button {
+	background-color: #FFFFFF;
+	font-weight: 400;
+	max-width: 150px;
+	width: 100%;
+	font-size: 1em;
+	height: 2em;
+	border: transparent; 
+	padding: auto 20px;
+	margin: 10px auto;
+}
+
+button:hover {
+	background-color: orange;
+  font-weight: bold;
+}
+
+h4 {
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+#pricing {
+	margin: 30px auto;
+	display: flex;
+	text-align: center;
+	line-height: 1.5em;
+	width: 100%;
+	max-width: 1000px;
+	justify-content: space-around;
+}
+
+.product {
+	width: 100%;
+	text-transform: uppercase;
+	padding: 15px 0;
+	align-items: center;
+	background-color: #FFFFFF;
+}
+
+.product > h3 {
+	margin-top: 0;
+	font-size: 1.2em;
+}
+
+.prod-desc {
+	display: block;
+	padding: 0;
+	list-style: none;
+  background-color: #FFFFFF;
+
+}
+
+.tenor, .bass, .valve {
+	border: 1px solid black;
+	width: 100%;
+	max-width: 300px;
+	margin: 1em;
+
+}
+
+/* media queries */
+
+@media screen and (max-width: 950px) {
+	.nav-ul {
+	display: flex;
+	flex-direction: row;
+	list-style-type: none;
+	width: 100%;
+	justify-content: space-around;
+	}
+
+	.nav-ul > li {
+		padding-right: 1em;
+	}
+  
+  .desc {
+    text-align: justify; 
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 20px;
+  }
+ .nav-ul {
+ 		display: flex;
+    flex-direction: column;
+    justify-content: center;
+   text-align: center;
+  }
+  
+  form {
+    padding-top: 2em;
+    padding-bottom: 0;
+  }
+
+  .grid {
+    padding-top: .3em;
+    padding-bottom: 1em;
+	  height: 150px;
+ }
+
+ .icon {
+ 	width: 100%;
+ 	max-width: 20vw;
+ 	height: 130px;
+ }
+
+ iframe {
+ 	width: 100%;
+ 	max-width: 325px;
+ }
+
+ .video {
+ 	display: flex;
+ 	align-items: center;
+ 	margin-top: 5em;
+ 	margin-bottom: 2em;
+ }
+
+ #pricing {
+ 	max-width: 300px;
+ 	width: 100%;
+ 	margin: auto;
+ 	display: flex;
+ 	flex-direction: column;
+ 	align-items: center;
+ }
+  @media screen and (max-width: 500px) {
+    .grid {
+       height: 200px;
+      padding: .5em 0;
+    }
+footer {
+  margin-top: 30px;
+  background-color: #ddd;
+  padding: 20px;
+  
+  ul {
+    display: flex;
+    justify-content: flex-end;
+    
+    li {
+      padding: 0 10px;
+    }
+  }
+  
+  span {
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.9em;
+    color: #444;
+  }
+}
