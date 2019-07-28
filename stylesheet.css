@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+
 body {
 	max-width: 90%;
 	margin: auto;
 	padding: 1em;
 	box-sizing: border-box;
-	font-family: Lato, sans-serif;
-	background-color: #BAD1FE;
+	font-family: 'Roboto Condensed', sans-serif;
+	background-color: rgb(255, 255, 255);
 	letter-spacing: 1px;
 }
 
@@ -15,12 +17,12 @@ header {
 	top: 0;
 	min-height: 75px;
 	align-items: center;
-	background-color: #BAD1FE;
+	background-color: rgb(255, 255, 255);
 	max-width: 85vw;
 	width: 100%;
 	margin:0;
   padding: 0;
-
+ 
 }
 
 img {
@@ -73,6 +75,52 @@ img {
 	background-color: orange;
 }
 
+.myButton {
+	-moz-box-shadow: 0px 10px 14px -7px #1e1f1f;
+	-webkit-box-shadow: 0px 10px 14px -7px #1e1f1f;
+	box-shadow: 0px 10px 14px -7px #1e1f1f;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #00897b), color-stop(1, #00897b));
+	background:-moz-linear-gradient(top, #00897b 5%, #00897b 100%);
+	background:-webkit-linear-gradient(top, #00897b 5%, #00897b 100%);
+	background:-o-linear-gradient(top, #00897b 5%, #00897b 100%);
+	background:-ms-linear-gradient(top, #00897b 5%, #00897b 100%);
+	background:linear-gradient(to bottom, #00897b 5%, #00897b 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00897b', endColorstr='#00897b',GradientType=0);
+	background-color:#00897b;
+	-moz-border-radius:25px;
+	-webkit-border-radius:25px;
+	border-radius:25px;
+	border:4px solid #00897b;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	font-weight:bold;
+	font-style:italic;
+	padding:9px 57px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #00897b;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #00897b), color-stop(1, #00897b));
+	background:-moz-linear-gradient(top, #00897b 5%, #00897b 100%);
+	background:-webkit-linear-gradient(top, #00897b 5%, #00897b 100%);
+	background:-o-linear-gradient(top, #00897b 5%, #00897b 100%);
+	background:-ms-linear-gradient(top, #00897b 5%, #00897b 100%);
+	background:linear-gradient(to bottom, #00897b 5%, #00897b 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00897b', endColorstr='#00897b',GradientType=0);
+	background-color:#00897b;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+
+
 h2 {
 	padding-top: 5vw;
 /* 	padding-bottom: 1vw; */
@@ -83,6 +131,11 @@ h3 {
 	font-size: 1.5em;
 	font-weight: 700;
 	margin-bottom: 0;
+	text-align: left;
+}
+
+p{
+	text-align: left;
 }
 
 a {
@@ -117,12 +170,13 @@ a:hover {
   align-items: center;
 	width: 20vw;
 	height: 125px;
+	
 
  }
 
  i {
  	font-size: 3em;
- 	color: rgb(241, 175, 15);
+ 	color: 
  }
 
 .desc {
@@ -154,6 +208,7 @@ button {
 	max-width: 150px;
 	width: 100%;
 	font-size: 1em;
+	font-family: 'Roboto Condensed', sans-serif;
 	height: 2em;
 	border: transparent; 
 	padding: auto 20px;
@@ -185,28 +240,36 @@ h4 {
 	text-transform: uppercase;
 	padding: 15px 0;
 	align-items: center;
-	background-color: #FFFFFF;
+	background-color: #00897B;
+	color: #ddd;
+	border-radius: 15px;
 }
 
 .product > h3 {
 	margin-top: 0;
 	font-size: 1.2em;
+	text-align: center;
+	background-color: #00897B
+	color: #ddd
 }
 
 .prod-desc {
 	display: block;
 	padding: 0;
 	list-style: none;
-  background-color: #FFFFFF;
+  background-color: #00897B;
 
 }
 
 .tenor, .bass, .valve {
-	border: 1px solid black;
+	text-align: center;
+	background-color: #00897B;
 	width: 100%;
 	max-width: 300px;
 	margin: 1em;
-
+	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+	border-radius: 15px;
+	color: #ddd;
 }
 
 /* media queries */
